@@ -16,6 +16,7 @@ if __package__ in {None, ""}:
 from realtime_data_pipeline.pipeline.fetch_prices import fetch_stooq_prices
 from realtime_data_pipeline.pipeline.fetch_sec import fetch_sec_filings
 from realtime_data_pipeline.pipeline.fetch_sources import fetch_configured_pages
+from realtime_data_pipeline.pipeline.global_markets import fetch_global_market_context
 from realtime_data_pipeline.pipeline.io_utils import read_json, write_csv, write_jsonl
 from realtime_data_pipeline.pipeline.report import build_markdown_report, write_report
 from realtime_data_pipeline.pipeline.technical_indicators import fetch_technical_indicators
@@ -107,6 +108,42 @@ TECHNICAL_FIELDS = [
     "error",
 ]
 
+GLOBAL_MARKET_FIELDS = [
+    "name",
+    "symbol",
+    "region",
+    "group",
+    "theme_signal",
+    "currency",
+    "date",
+    "price",
+    "open",
+    "high",
+    "low",
+    "previous_close",
+    "pct_from_prev_close",
+    "pct_from_open",
+    "volume",
+    "freshness",
+    "provider",
+    "fetched_at_utc",
+    "error",
+]
+
+GLOBAL_SUMMARY_FIELDS = [
+    "group",
+    "region",
+    "theme_signal",
+    "count",
+    "fresh_count",
+    "avg_pct_from_prev_close",
+    "avg_pct_from_open",
+    "positive_count",
+    "negative_count",
+    "freshness",
+    "interpretation",
+]
+
 
 def main() -> int:
     args = parse_args()
@@ -142,6 +179,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--skip-prices", action="store_true", help="Skip Stooq price fetch.")
     parser.add_argument("--skip-technicals", action="store_true", help="Skip EMA/BOLL indicator fetch.")
+    parser.add_argument("--skip-global-markets", action="store_true", help="Skip non-US/global market context fetch.")
     parser.add_argument("--source-limit", type=int, default=0, help="Fetch only the first N configured source pages.")
     return parser.parse_args()
 
@@ -173,11 +211,17 @@ def run_once(args: argparse.Namespace) -> None:
         technicals = read_existing_csv(PROCESSED_DIR / "technical_indicators_latest.csv")
     else:
         technicals = fetch_technical_indicators(tickers)
+    if args.skip_global_markets:
+        global_markets = read_existing_csv(PROCESSED_DIR / "global_market_context_latest.csv")
+        global_summary = read_existing_csv(PROCESSED_DIR / "global_market_theme_summary_latest.csv")
+    else:
+        global_markets, global_summary = fetch_global_market_context(config.get("global_markets", []))
 
-    write_outputs(run_id, pages, events, filings, prices, technicals)
+    write_outputs(run_id, pages, events, filings, prices, technicals, global_markets, global_summary)
     print(
         f"[pipeline] run_id={run_id} pages={len(pages)} events={len(events)} "
-        f"filings={len(filings)} prices={len(prices)} technicals={len(technicals)} done"
+        f"filings={len(filings)} prices={len(prices)} technicals={len(technicals)} "
+        f"global_markets={len(global_markets)} done"
     )
 
 
@@ -217,6 +261,8 @@ def write_outputs(
     filings: list[dict[str, Any]],
     prices: list[dict[str, Any]],
     technicals: list[dict[str, Any]],
+    global_markets: list[dict[str, Any]],
+    global_summary: list[dict[str, Any]],
 ) -> None:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
@@ -227,6 +273,8 @@ def write_outputs(
     write_jsonl(RAW_DIR / f"filings_{run_id}.jsonl", filings)
     write_jsonl(RAW_DIR / f"prices_{run_id}.jsonl", prices)
     write_jsonl(RAW_DIR / f"technicals_{run_id}.jsonl", technicals)
+    write_jsonl(RAW_DIR / f"global_markets_{run_id}.jsonl", global_markets)
+    write_jsonl(RAW_DIR / f"global_market_summary_{run_id}.jsonl", global_summary)
 
     write_csv(PROCESSED_DIR / "source_pages_latest.csv", pages, PAGE_FIELDS)
     write_csv(PROCESSED_DIR / "events_latest.csv", events, EVENT_FIELDS)
@@ -234,6 +282,8 @@ def write_outputs(
     write_csv(PROCESSED_DIR / "sec_filings_latest.csv", filings, FILING_FIELDS)
     write_csv(PROCESSED_DIR / "prices_latest.csv", prices, PRICE_FIELDS)
     write_csv(PROCESSED_DIR / "technical_indicators_latest.csv", technicals, TECHNICAL_FIELDS)
+    write_csv(PROCESSED_DIR / "global_market_context_latest.csv", global_markets, GLOBAL_MARKET_FIELDS)
+    write_csv(PROCESSED_DIR / "global_market_theme_summary_latest.csv", global_summary, GLOBAL_SUMMARY_FIELDS)
     update_event_history(PROCESSED_DIR / "events_history.csv", events)
 
     report = build_markdown_report(
@@ -243,6 +293,8 @@ def write_outputs(
         filings=filings,
         prices=prices,
         technicals=technicals,
+        global_markets=global_markets,
+        global_summary=global_summary,
     )
     write_report(REPORT_DIR / "realtime_snapshot_latest.md", report)
     write_report(REPORT_DIR / f"realtime_snapshot_{run_id}.md", report)

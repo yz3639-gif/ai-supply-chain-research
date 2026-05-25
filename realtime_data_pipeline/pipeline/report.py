@@ -14,8 +14,12 @@ def build_markdown_report(
     filings: list[dict[str, Any]],
     prices: list[dict[str, Any]],
     technicals: list[dict[str, Any]] | None = None,
+    global_markets: list[dict[str, Any]] | None = None,
+    global_summary: list[dict[str, Any]] | None = None,
 ) -> str:
     technicals = technicals or []
+    global_markets = global_markets or []
+    global_summary = global_summary or []
     event_counts = Counter(event.get("category", "") for event in events)
     failed_pages = [page for page in pages if page.get("error") or page.get("status") not in {200, 201, 202}]
     report = [
@@ -31,6 +35,7 @@ def build_markdown_report(
         f"- SEC filing rows: {len(filings)}",
         f"- Price rows: {len(prices)}",
         f"- Technical indicator rows: {len(technicals)}",
+        f"- Global market rows: {len(global_markets)}",
         f"- Failed source pages: {len(failed_pages)}",
         "",
         "## Event Categories",
@@ -58,6 +63,27 @@ def build_markdown_report(
             f"{row.get('ema20','')} | {row.get('ema50','')} | {row.get('ema200','')} | "
             f"{row.get('boll20_percent_b','')} | {row.get('boll20_bandwidth','')} | "
             f"{row.get('trend_state','')} | {row.get('error','')} |"
+        )
+    report.extend(["", "## Global Market Context", ""])
+    if global_summary:
+        report.append("| group | region | theme | fresh | avg prev % | avg open % | interpretation |")
+        report.append("|---|---|---|---:|---:|---:|---|")
+        for row in global_summary:
+            report.append(
+                f"| {row.get('group','')} | {row.get('region','')} | {row.get('theme_signal','')} | "
+                f"{row.get('fresh_count','')}/{row.get('count','')} | {row.get('avg_pct_from_prev_close','')} | "
+                f"{row.get('avg_pct_from_open','')} | {row.get('interpretation','')} |"
+            )
+    else:
+        report.append("- No global market context rows.")
+    report.extend(["", "### Global Market Detail", ""])
+    report.append("| name | symbol | region | date | price | prev % | open % | freshness |")
+    report.append("|---|---|---|---:|---:|---:|---:|---|")
+    for row in global_markets[:40]:
+        report.append(
+            f"| {row.get('name','')} | {row.get('symbol','')} | {row.get('region','')} | "
+            f"{row.get('date','')} | {row.get('price','')} | {row.get('pct_from_prev_close','')} | "
+            f"{row.get('pct_from_open','')} | {row.get('freshness','') or row.get('error','')} |"
         )
     report.extend(["", "## High-Quality Signals", ""])
     high_quality = [event for event in events if event.get("source_quality") == "A"]

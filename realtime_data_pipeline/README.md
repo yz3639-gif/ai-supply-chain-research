@@ -37,6 +37,8 @@ python3 realtime_data_pipeline/run_pipeline.py
 | `data/processed/events_history.csv` | 去重后的事件历史 |
 | `data/processed/prices_latest.csv` | 最新可得日线价格 |
 | `data/processed/technical_indicators_latest.csv` | EMA20/50/200 和 BOLL20 技术指标 |
+| `data/processed/global_market_context_latest.csv` | 台湾、日本、韩国、欧洲、FX、商品、加密和期货代理 |
+| `data/processed/global_market_theme_summary_latest.csv` | 全球市场代理按主题聚合后的外部确认表 |
 | `data/processed/sec_filings_latest.csv` | SEC 最近 filings |
 | `reports/realtime_snapshot_latest.md` | 最新实时快照 |
 | `data/processed/pipeline.log` | 后台运行日志 |
@@ -48,6 +50,7 @@ python3 realtime_data_pipeline/run_pipeline.py
 - C/D 级或抓取失败只进入 `research_only`。
 - 抓到信号不等于买入；必须先通过 `no_trade_checklist_v1.csv`。
 - EMA/BOLL 只用于判断趋势、追高、回撤和拥挤度，不作为基本面买入理由。
+- 全球市场上下文只作为外部确认/风险温度计；`stale` 数据不得当作当天新确认。
 
 ## 技术指标
 
@@ -59,3 +62,18 @@ python3 realtime_data_pipeline/run_pipeline.py
 - `boll20_bandwidth`
 - `close_vs_ema20_pct`, `close_vs_ema50_pct`, `close_vs_ema200_pct`
 - `trend_state`
+
+## 全球市场上下文
+
+默认跟踪：
+
+- 台湾：TSMC、Lite-On、Quanta、Wistron、Alchip、Taiwan Weighted。
+- 日本：Advantest、Tokyo Electron、Disco、Lasertec、Fujikura、Sumitomo Electric、Nikkei 225。
+- 韩国：SK Hynix、Samsung Electronics、Hanmi Semiconductor、KOSPI。
+- 欧洲：ASML、BESI、Infineon、STMicroelectronics。
+- 宏观：Nasdaq 100 futures、BTC、WTI、Gold、USDJPY、EURUSD。
+
+输出包含 `freshness` 字段：
+
+- `fresh_today`：可作为当天外部确认。
+- `stale` / `no_fresh_today_signal`：只作背景，不能作为当天新信号。

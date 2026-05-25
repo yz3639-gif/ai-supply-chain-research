@@ -14,6 +14,7 @@
 - `00_active_system/no_trade_checklist_v1.csv`：不做清单，防止模型为了交易而交易。
 - `00_active_system/model_validation_protocol_v1.md`：模型有效性验证协议，拆分方向、公司 alpha 和执行时点。
 - `00_active_system/realtime_report_2026-05-25.md`：基于最新公开信息生成的实时信息层报告。
+- `00_active_system/global_market_context_report_2026-05-25.md`：其他市场纳入模型后的最新上下文报告。
 - `00_active_system/simple_event_checklist_v1.csv`：最小事件 checklist。
 - `00_active_system/decision_journal_simple_v1.md`：简单复盘日志。
 - `00_active_system/framework_validity_audit_v1.md`：有效性审计。
@@ -57,6 +58,8 @@ python3 realtime_data_pipeline/run_pipeline.py
 - `realtime_data_pipeline/data/processed/model_ingest_latest.csv`
 - `realtime_data_pipeline/data/processed/events_history.csv`
 - `realtime_data_pipeline/data/processed/technical_indicators_latest.csv`
+- `realtime_data_pipeline/data/processed/global_market_context_latest.csv`
+- `realtime_data_pipeline/data/processed/global_market_theme_summary_latest.csv`
 - `realtime_data_pipeline/reports/realtime_snapshot_latest.md`
 
 ## 整理记录

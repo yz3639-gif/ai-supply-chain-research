@@ -108,5 +108,34 @@
   "price_provider": {
     "name": "stooq_quote_csv",
     "url_template": "https://stooq.com/q/l/?s={symbol}.us&f=sd2t2ohlcv&h&e=csv"
-  }
+  },
+  "global_markets": [
+    {"name": "TSMC", "symbol": "2330.TW", "region": "Taiwan", "group": "Taiwan_AI_hardware", "theme_signal": "AP_HBM"},
+    {"name": "Lite-On", "symbol": "2301.TW", "region": "Taiwan", "group": "Taiwan_AI_hardware", "theme_signal": "power_optical_components"},
+    {"name": "Quanta", "symbol": "2382.TW", "region": "Taiwan", "group": "Taiwan_AI_server", "theme_signal": "AI_server"},
+    {"name": "Wistron", "symbol": "3231.TW", "region": "Taiwan", "group": "Taiwan_AI_server", "theme_signal": "AI_server"},
+    {"name": "Alchip", "symbol": "3661.TW", "region": "Taiwan", "group": "Taiwan_ASIC", "theme_signal": "ASIC_chiplet"},
+    {"name": "Advantest", "symbol": "6857.T", "region": "Japan", "group": "Japan_semi_test", "theme_signal": "AP_HBM_test"},
+    {"name": "Tokyo Electron", "symbol": "8035.T", "region": "Japan", "group": "Japan_semi_equipment", "theme_signal": "semi_equipment"},
+    {"name": "Disco", "symbol": "6146.T", "region": "Japan", "group": "Japan_semi_equipment", "theme_signal": "advanced_packaging"},
+    {"name": "Lasertec", "symbol": "6920.T", "region": "Japan", "group": "Japan_semi_equipment", "theme_signal": "semi_equipment"},
+    {"name": "Fujikura", "symbol": "5803.T", "region": "Japan", "group": "Japan_optical_cable", "theme_signal": "optical_cable"},
+    {"name": "Sumitomo Electric", "symbol": "5802.T", "region": "Japan", "group": "Japan_optical_cable", "theme_signal": "optical_cable"},
+    {"name": "SK Hynix", "symbol": "000660.KS", "region": "Korea", "group": "Korea_memory_HBM", "theme_signal": "HBM_memory"},
+    {"name": "Samsung Electronics", "symbol": "005930.KS", "region": "Korea", "group": "Korea_memory_HBM", "theme_signal": "HBM_memory"},
+    {"name": "Hanmi Semiconductor", "symbol": "042700.KS", "region": "Korea", "group": "Korea_HBM_equipment", "theme_signal": "HBM_equipment"},
+    {"name": "ASML", "symbol": "ASML.AS", "region": "Europe", "group": "Europe_semi_equipment", "theme_signal": "semi_equipment"},
+    {"name": "BESI", "symbol": "BESI.AS", "region": "Europe", "group": "Europe_AP_equipment", "theme_signal": "advanced_packaging"},
+    {"name": "Infineon", "symbol": "IFX.DE", "region": "Europe", "group": "Europe_power_semis", "theme_signal": "power_semis"},
+    {"name": "STMicroelectronics", "symbol": "STMPA.PA", "region": "Europe", "group": "Europe_power_semis", "theme_signal": "power_semis"},
+    {"name": "Nikkei 225", "symbol": "^N225", "region": "Japan", "group": "Global_indices", "theme_signal": "risk_temperature"},
+    {"name": "Taiwan Weighted", "symbol": "^TWII", "region": "Taiwan", "group": "Global_indices", "theme_signal": "risk_temperature"},
+    {"name": "KOSPI", "symbol": "^KS11", "region": "Korea", "group": "Global_indices", "theme_signal": "risk_temperature"},
+    {"name": "Nasdaq 100 Futures", "symbol": "NQ=F", "region": "US_futures", "group": "Macro_risk", "theme_signal": "risk_temperature"},
+    {"name": "Bitcoin USD", "symbol": "BTC-USD", "region": "Crypto", "group": "Macro_risk", "theme_signal": "risk_temperature"},
+    {"name": "WTI Crude", "symbol": "CL=F", "region": "Commodity", "group": "Macro_cost", "theme_signal": "energy_cost"},
+    {"name": "Gold", "symbol": "GC=F", "region": "Commodity", "group": "Macro_risk", "theme_signal": "risk_hedge"},
+    {"name": "USDJPY", "symbol": "JPY=X", "region": "FX", "group": "Macro_fx", "theme_signal": "Japan_export_fx"},
+    {"name": "EURUSD", "symbol": "EURUSD=X", "region": "FX", "group": "Macro_fx", "theme_signal": "Europe_fx"}
+  ]
 }
