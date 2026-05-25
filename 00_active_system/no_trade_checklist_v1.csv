@@ -1,0 +1,11 @@
+condition_id,category,condition,hard_stop,allowed_exception,required_action,why_it_matters
+NT01,valuation,Price is extremely extended versus recent moving averages or prior event range and there is no new A/B-grade evidence,YES,Only tiny tracking position if pre-defined before event,Do not add,"Avoid buying a fully priced narrative"
+NT02,theme_concentration,Same risk cluster exposure is already crowded or multiple highly correlated names would be raised together,YES,None,Do not add until exposure falls,"Prevents mistaking diversification for duplicated risk"
+NT03,information_quality,Thesis is mainly supported by C/D-grade information,YES,Research-only watch item,Keep in pre-confirmation log,"Weak information should not become an investment conclusion"
+NT04,cash_flow,Company narrative improves but FCF or working capital structurally worsens without a delivery explanation,YES,None,Reduce or wait,"Narrative without cash conversion can hide execution problems"
+NT05,assumption_load,The thesis requires more than three unverified assumptions to work,YES,None,Do not initiate,"Too many assumptions usually means the edge is imaginary"
+NT06,falsification_missing,Unable to write a clear fact that would prove the thesis wrong,YES,None,Do not initiate,"If it cannot be falsified it cannot be managed"
+NT07,thesis_drift,Current holding reason is materially different from original buy thesis and drift is not documented,NO,Document drift and reset thesis before action,Hold only,"Stops narrative drift from becoming permanent self-justification"
+NT08,liquidity,Position size would be large relative to daily liquidity or exit window,YES,Only research/watch,Do not add,"Small-cap thesis can be right but untradeable"
+NT09,event_gap,Upcoming binary event has high expectations and no edge versus consensus,NO,Tiny tracking only if risk budget allows,Wait for post-event evidence,"Avoids paying for uncertainty without information edge"
+NT10,benchmark_failure,Prior similar events in ledger failed versus theme basket and no rule has changed,NO,Only after written rule revision,Pause same setup,"Prevents repeating a known weak pattern"
