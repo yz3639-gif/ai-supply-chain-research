@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Noto Sans CJK SC",sans-serif;} .title{font-size:24px;font-weight:700;fill:#0f172a}.sub{font-size:13px;fill:#475569}.label{font-size:12px;fill:#334155}.small{font-size:11px;fill:#64748b}.value{font-size:12px;font-weight:600;fill:#0f172a}</style>
+<text x="32" y="42" class="title">技术位置：相对 EMA20 的偏离</text>
+<text x="32" y="66" class="sub">红色表示 BOLL %b ≥ 0.9 或相对 EMA20 偏离过大，适合触发 no-trade 检查。</text>
+<line x1="520" y1="86" x2="520" y2="580" stroke="#cbd5e1" stroke-width="1"/>
+<text x="32" y="112" class="label">AXTI</text>
+<rect x="520.0" y="94" width="500.0" height="26" rx="5" fill="#dc2626"/>
+<text x="1030.0" y="112" class="value">+30.93%</text>
+<text x="910" y="112" class="small">BOLL %b 0.94 / strong_uptrend</text>
+<text x="32" y="153" class="label">PPSI</text>
+<rect x="520.0" y="135" width="412.6" height="26" rx="5" fill="#dc2626"/>
+<text x="942.6" y="153" class="value">+25.52%</text>
+<text x="910" y="153" class="small">BOLL %b 1.11 / strong_uptrend</text>
+<text x="32" y="194" class="label">SMTC</text>
+<rect x="520.0" y="176" width="360.5" height="26" rx="5" fill="#dc2626"/>
+<text x="890.5" y="194" class="value">+22.30%</text>
+<text x="910" y="194" class="small">BOLL %b 0.96 / strong_uptrend</text>
+<text x="32" y="235" class="label">POET</text>
+<rect x="520.0" y="217" width="249.8" height="26" rx="5" fill="#2563eb"/>
+<text x="779.8" y="235" class="value">+15.46%</text>
+<text x="910" y="235" class="small">BOLL %b 0.69 / strong_uptrend</text>
+<text x="32" y="276" class="label">VECO</text>
+<rect x="520.0" y="258" width="133.1" height="26" rx="5" fill="#2563eb"/>
+<text x="663.1" y="276" class="value">+8.24%</text>
+<text x="910" y="276" class="small">BOLL %b 0.71 / strong_uptrend</text>
+<text x="32" y="317" class="label">POWL</text>
+<rect x="520.0" y="299" width="18.9" height="26" rx="5" fill="#2563eb"/>
+<text x="548.9" y="317" class="value">+1.17%</text>
+<text x="910" y="317" class="small">BOLL %b 0.44 / strong_uptrend</text>
+<text x="32" y="358" class="label">MOD</text>
+<rect x="520.0" y="340" width="6.8" height="26" rx="5" fill="#2563eb"/>
+<text x="536.8" y="358" class="value">+0.42%</text>
+<text x="910" y="358" class="small">BOLL %b 0.47 / strong_uptrend</text>
+<text x="32" y="399" class="label">FORM</text>
+<rect x="499.4" y="381" width="20.6" height="26" rx="5" fill="#64748b"/>
+<text x="421.4" y="399" class="value">-1.28%</text>
+<text x="910" y="399" class="small">BOLL %b 0.36 / mixed</text>
+</svg>

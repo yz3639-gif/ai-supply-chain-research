@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Noto Sans CJK SC",sans-serif;} .title{font-size:24px;font-weight:700;fill:#0f172a}.sub{font-size:13px;fill:#475569}.label{font-size:12px;fill:#334155}.small{font-size:11px;fill:#64748b}.value{font-size:12px;font-weight:600;fill:#0f172a}</style>
+<text x="32" y="42" class="title">AI 供应链风险预算配置</text>
+<text x="32" y="66" class="sub">这是主题风险预算，不是总资产配置；核心思想是留出现金等事件确认和回撤。</text>
+<rect x="52.0" y="116" width="315.0" height="58" rx="8" fill="#2563eb"/>
+<text x="64.0" y="151" fill="#ffffff" font-size="15" font-weight="700">核心确认仓 45%</text>
+<rect x="367.0" y="116" width="140.0" height="58" rx="8" fill="#0891b2"/>
+<text x="379.0" y="151" fill="#ffffff" font-size="15" font-weight="700">光通信事件仓 20%</text>
+<rect x="507.0" y="116" width="189.0" height="58" rx="8" fill="#64748b"/>
+<text x="519.0" y="151" fill="#ffffff" font-size="15" font-weight="700">回撤等待现金 27%</text>
+<rect x="696.0" y="116" width="56.0" height="58" rx="8" fill="#f59e0b"/>
+<text x="708.0" y="151" fill="#ffffff" font-size="15" font-weight="700">冷门期权仓 8%</text>
+<rect x="54" y="219" width="18" height="18" rx="4" fill="#2563eb"/>
+<text x="84" y="235" class="label">核心确认仓：45%</text>
+<rect x="54" y="253" width="18" height="18" rx="4" fill="#0891b2"/>
+<text x="84" y="269" class="label">光通信事件仓：20%</text>
+<rect x="54" y="287" width="18" height="18" rx="4" fill="#64748b"/>
+<text x="84" y="303" class="label">回撤等待现金：27%</text>
+<rect x="54" y="321" width="18" height="18" rx="4" fill="#f59e0b"/>
+<text x="84" y="337" class="label">冷门期权仓：8%</text>
+</svg>

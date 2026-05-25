@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Noto Sans CJK SC",sans-serif;} .title{font-size:24px;font-weight:700;fill:#0f172a}.sub{font-size:13px;fill:#475569}.label{font-size:12px;fill:#334155}.small{font-size:11px;fill:#64748b}.value{font-size:12px;font-weight:600;fill:#0f172a}</style>
+<text x="32" y="42" class="title">全球市场外部确认强度</text>
+<text x="32" y="66" class="sub">只统计 fresh_today 的市场组；条形为相对前收平均涨跌。</text>
+<text x="32" y="110" class="label">Japan_optical_cable</text>
+<rect x="260" y="92" width="720.0" height="26" rx="5" fill="#16a34a"/>
+<text x="990.0" y="110" class="value">+9.12%</text>
+<text x="900" y="110" class="small">optical_cable</text>
+<text x="32" y="150" class="label">Japan_semi_equipment</text>
+<rect x="260" y="132" width="645.6" height="26" rx="5" fill="#16a34a"/>
+<text x="915.6" y="150" class="value">+8.18%</text>
+<text x="900" y="150" class="small">advanced_packaging|semi_equipment</text>
+<text x="32" y="190" class="label">Taiwan_AI_hardware</text>
+<rect x="260" y="172" width="469.7" height="26" rx="5" fill="#16a34a"/>
+<text x="739.7" y="190" class="value">+5.95%</text>
+<text x="900" y="190" class="small">AP_HBM|power_optical_components</text>
+<text x="32" y="230" class="label">Japan_semi_test</text>
+<rect x="260" y="212" width="345.6" height="26" rx="5" fill="#16a34a"/>
+<text x="615.6" y="230" class="value">+4.38%</text>
+<text x="900" y="230" class="small">AP_HBM_test</text>
+<text x="32" y="270" class="label">Taiwan_AI_server</text>
+<rect x="260" y="252" width="190.5" height="26" rx="5" fill="#16a34a"/>
+<text x="460.5" y="270" class="value">+2.41%</text>
+<text x="900" y="270" class="small">AI_server</text>
+<text x="32" y="310" class="label">Global_indices</text>
+<rect x="260" y="292" width="175.3" height="26" rx="5" fill="#16a34a"/>
+<text x="445.3" y="310" class="value">+2.22%</text>
+<text x="900" y="310" class="small">risk_temperature</text>
+<text x="32" y="350" class="label">Macro_risk</text>
+<rect x="260" y="332" width="25.6" height="26" rx="5" fill="#64748b"/>
+<text x="295.6" y="350" class="value">+0.32%</text>
+<text x="900" y="350" class="small">risk_hedge|risk_temperature</text>
+<text x="32" y="390" class="label">Taiwan_ASIC</text>
+<rect x="260" y="372" width="16.1" height="26" rx="5" fill="#64748b"/>
+<text x="286.1" y="390" class="value">+0.20%</text>
+<text x="900" y="390" class="small">ASIC_chiplet</text>
+<text x="32" y="430" class="label">Macro_fx</text>
+<rect x="260" y="412" width="5.2" height="26" rx="5" fill="#64748b"/>
+<text x="275.2" y="430" class="value">+0.07%</text>
+<text x="900" y="430" class="small">Europe_fx|Japan_export_fx</text>
+<text x="32" y="470" class="label">Macro_cost</text>
+<rect x="260" y="452" width="2.0" height="26" rx="5" fill="#64748b"/>
+<text x="270.0" y="470" class="value">+0.00%</text>
+<text x="900" y="470" class="small">energy_cost</text>
+</svg>

@@ -33,6 +33,7 @@
 | `03_backtests_and_scripts/` | walk-forward、主题回测、事件研究脚本和结果 |
 | `04_watchlists_strategy/` | watchlist、策略名册、催化剂日历、战术/组合表 |
 | `realtime_data_pipeline/` | 每分钟公开信息抓取、价格快照、SEC filings 和模型输入表 |
+| `strategy_package_2026-05-25/` | 综合策略图文包，含主报告、图表和生成时数据快照 |
 | `99_archive_superseded/` | v3.3 之前的旧报告、根目录重复文件和缓存 |
 
 ## 使用原则

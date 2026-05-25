@@ -1,0 +1,16 @@
+group,region,theme_signal,count,fresh_count,avg_pct_from_prev_close,avg_pct_from_open,positive_count,negative_count,freshness,interpretation
+Europe_AP_equipment,Europe,advanced_packaging,1,0,1.1834,-0.5091,1,0,stale_or_closed,no_fresh_today_signal
+Europe_power_semis,Europe,power_semis,2,0,6.5724,3.314,2,0,stale_or_closed,no_fresh_today_signal
+Europe_semi_equipment,Europe,semi_equipment,1,0,4.7428,2.4727,1,0,stale_or_closed,no_fresh_today_signal
+Global_indices,Japan|Korea|Taiwan,risk_temperature,3,2,2.2204,1.4809,3,0,fresh_today,positive_external_confirmation
+Japan_optical_cable,Japan,optical_cable,2,2,9.12,2.2039,2,0,fresh_today,positive_external_confirmation
+Japan_semi_equipment,Japan,advanced_packaging|semi_equipment,3,3,8.1778,4.936,3,0,fresh_today,positive_external_confirmation
+Japan_semi_test,Japan,AP_HBM_test,1,1,4.377,2.8446,1,0,fresh_today,positive_external_confirmation
+Korea_HBM_equipment,Korea,HBM_equipment,1,0,-3.609,-1.8377,0,1,stale_or_closed,no_fresh_today_signal
+Korea_memory_HBM,Korea,HBM_memory,2,0,-1.1429,-1.2757,1,1,stale_or_closed,no_fresh_today_signal
+Macro_cost,Commodity,energy_cost,1,1,0.0,2.8973,0,0,fresh_today,mixed_or_neutral
+Macro_fx,FX,Europe_fx|Japan_export_fx,2,2,0.0659,0.15,1,1,fresh_today,mixed_or_neutral
+Macro_risk,Commodity|Crypto|US_futures,risk_hedge|risk_temperature,3,3,0.3241,-0.0181,2,0,fresh_today,mixed_or_neutral
+Taiwan_AI_hardware,Taiwan,AP_HBM|power_optical_components,2,2,5.9495,4.2051,2,0,fresh_today,positive_external_confirmation
+Taiwan_AI_server,Taiwan,AI_server,2,2,2.4126,0.0776,2,0,fresh_today,positive_external_confirmation
+Taiwan_ASIC,Taiwan,ASIC_chiplet,1,1,0.2043,-2.2908,1,0,fresh_today,mixed_or_neutral
