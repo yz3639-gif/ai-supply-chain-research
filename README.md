@@ -14,6 +14,7 @@
 - `00_active_system/decision_journal_simple_v1.md`：简单复盘日志。
 - `00_active_system/framework_validity_audit_v1.md`：有效性审计。
 - `00_active_system/self_reflection_v3_2.md`：自省记录。
+- `00_active_system/model_self_reflection_v3_3.md`：模型层面的自省，重点是早期发现能力、估值赔率、主题 beta 和叙事漂移。
 - `00_active_system/AI供应链完整深挖总报告_v3_决策系统版.md`：总报告。
 
 ## 目录说明
