@@ -18,6 +18,7 @@ from realtime_data_pipeline.pipeline.fetch_sec import fetch_sec_filings
 from realtime_data_pipeline.pipeline.fetch_sources import fetch_configured_pages
 from realtime_data_pipeline.pipeline.io_utils import read_json, write_csv, write_jsonl
 from realtime_data_pipeline.pipeline.report import build_markdown_report, write_report
+from realtime_data_pipeline.pipeline.technical_indicators import fetch_technical_indicators
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -84,6 +85,28 @@ PRICE_FIELDS = [
     "error",
 ]
 
+TECHNICAL_FIELDS = [
+    "ticker",
+    "date",
+    "close",
+    "ema20",
+    "ema50",
+    "ema200",
+    "boll20_mid",
+    "boll20_upper",
+    "boll20_lower",
+    "boll20_percent_b",
+    "boll20_bandwidth",
+    "close_vs_ema20_pct",
+    "close_vs_ema50_pct",
+    "close_vs_ema200_pct",
+    "trend_state",
+    "history_points",
+    "provider",
+    "fetched_at_utc",
+    "error",
+]
+
 
 def main() -> int:
     args = parse_args()
@@ -118,6 +141,7 @@ def parse_args() -> argparse.Namespace:
         help="Do not refetch SEC submissions if latest SEC file is newer than this many seconds.",
     )
     parser.add_argument("--skip-prices", action="store_true", help="Skip Stooq price fetch.")
+    parser.add_argument("--skip-technicals", action="store_true", help="Skip EMA/BOLL indicator fetch.")
     parser.add_argument("--source-limit", type=int, default=0, help="Fetch only the first N configured source pages.")
     return parser.parse_args()
 
@@ -145,11 +169,15 @@ def run_once(args: argparse.Namespace) -> None:
     else:
         provider = config.get("price_provider", {})
         prices = fetch_stooq_prices(tickers, provider.get("url_template", ""))
+    if args.skip_technicals:
+        technicals = read_existing_csv(PROCESSED_DIR / "technical_indicators_latest.csv")
+    else:
+        technicals = fetch_technical_indicators(tickers)
 
-    write_outputs(run_id, pages, events, filings, prices)
+    write_outputs(run_id, pages, events, filings, prices, technicals)
     print(
         f"[pipeline] run_id={run_id} pages={len(pages)} events={len(events)} "
-        f"filings={len(filings)} prices={len(prices)} done"
+        f"filings={len(filings)} prices={len(prices)} technicals={len(technicals)} done"
     )
 
 
@@ -188,6 +216,7 @@ def write_outputs(
     events: list[dict[str, Any]],
     filings: list[dict[str, Any]],
     prices: list[dict[str, Any]],
+    technicals: list[dict[str, Any]],
 ) -> None:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
@@ -197,15 +226,24 @@ def write_outputs(
     write_jsonl(RAW_DIR / f"events_{run_id}.jsonl", events)
     write_jsonl(RAW_DIR / f"filings_{run_id}.jsonl", filings)
     write_jsonl(RAW_DIR / f"prices_{run_id}.jsonl", prices)
+    write_jsonl(RAW_DIR / f"technicals_{run_id}.jsonl", technicals)
 
     write_csv(PROCESSED_DIR / "source_pages_latest.csv", pages, PAGE_FIELDS)
     write_csv(PROCESSED_DIR / "events_latest.csv", events, EVENT_FIELDS)
     write_csv(PROCESSED_DIR / "model_ingest_latest.csv", events, EVENT_FIELDS)
     write_csv(PROCESSED_DIR / "sec_filings_latest.csv", filings, FILING_FIELDS)
     write_csv(PROCESSED_DIR / "prices_latest.csv", prices, PRICE_FIELDS)
+    write_csv(PROCESSED_DIR / "technical_indicators_latest.csv", technicals, TECHNICAL_FIELDS)
     update_event_history(PROCESSED_DIR / "events_history.csv", events)
 
-    report = build_markdown_report(run_id=run_id, pages=pages, events=events, filings=filings, prices=prices)
+    report = build_markdown_report(
+        run_id=run_id,
+        pages=pages,
+        events=events,
+        filings=filings,
+        prices=prices,
+        technicals=technicals,
+    )
     write_report(REPORT_DIR / "realtime_snapshot_latest.md", report)
     write_report(REPORT_DIR / f"realtime_snapshot_{run_id}.md", report)
 

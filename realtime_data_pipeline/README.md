@@ -36,6 +36,7 @@ python3 realtime_data_pipeline/run_pipeline.py
 | `data/processed/model_ingest_latest.csv` | 模型每分钟读取的最新事件输入 |
 | `data/processed/events_history.csv` | 去重后的事件历史 |
 | `data/processed/prices_latest.csv` | 最新可得日线价格 |
+| `data/processed/technical_indicators_latest.csv` | EMA20/50/200 和 BOLL20 技术指标 |
 | `data/processed/sec_filings_latest.csv` | SEC 最近 filings |
 | `reports/realtime_snapshot_latest.md` | 最新实时快照 |
 | `data/processed/pipeline.log` | 后台运行日志 |
@@ -46,4 +47,15 @@ python3 realtime_data_pipeline/run_pipeline.py
 - A/B 级但未完全确认的产品、产能、样品、融资信号进入 `pre_confirmation_signal_log`。
 - C/D 级或抓取失败只进入 `research_only`。
 - 抓到信号不等于买入；必须先通过 `no_trade_checklist_v1.csv`。
+- EMA/BOLL 只用于判断趋势、追高、回撤和拥挤度，不作为基本面买入理由。
 
+## 技术指标
+
+每次价格刷新会同步计算：
+
+- `ema20`, `ema50`, `ema200`
+- `boll20_mid`, `boll20_upper`, `boll20_lower`
+- `boll20_percent_b`
+- `boll20_bandwidth`
+- `close_vs_ema20_pct`, `close_vs_ema50_pct`, `close_vs_ema200_pct`
+- `trend_state`

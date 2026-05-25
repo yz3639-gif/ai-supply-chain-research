@@ -56,6 +56,7 @@ python3 realtime_data_pipeline/run_pipeline.py
 
 - `realtime_data_pipeline/data/processed/model_ingest_latest.csv`
 - `realtime_data_pipeline/data/processed/events_history.csv`
+- `realtime_data_pipeline/data/processed/technical_indicators_latest.csv`
 - `realtime_data_pipeline/reports/realtime_snapshot_latest.md`
 
 ## 整理记录

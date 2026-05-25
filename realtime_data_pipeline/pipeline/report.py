@@ -13,7 +13,9 @@ def build_markdown_report(
     events: list[dict[str, Any]],
     filings: list[dict[str, Any]],
     prices: list[dict[str, Any]],
+    technicals: list[dict[str, Any]] | None = None,
 ) -> str:
+    technicals = technicals or []
     event_counts = Counter(event.get("category", "") for event in events)
     failed_pages = [page for page in pages if page.get("error") or page.get("status") not in {200, 201, 202}]
     report = [
@@ -28,6 +30,7 @@ def build_markdown_report(
         f"- Detected signal rows: {len(events)}",
         f"- SEC filing rows: {len(filings)}",
         f"- Price rows: {len(prices)}",
+        f"- Technical indicator rows: {len(technicals)}",
         f"- Failed source pages: {len(failed_pages)}",
         "",
         "## Event Categories",
@@ -45,6 +48,16 @@ def build_markdown_report(
         report.append(
             f"| {row.get('ticker','')} | {row.get('date','')} | {row.get('close','')} | "
             f"{row.get('volume','')} | {row.get('error','')} |"
+        )
+    report.extend(["", "## EMA / BOLL", ""])
+    report.append("| ticker | date | close | EMA20 | EMA50 | EMA200 | BOLL% b | BOLL bandwidth | trend | error |")
+    report.append("|---|---:|---:|---:|---:|---:|---:|---:|---|---|")
+    for row in technicals:
+        report.append(
+            f"| {row.get('ticker','')} | {row.get('date','')} | {row.get('close','')} | "
+            f"{row.get('ema20','')} | {row.get('ema50','')} | {row.get('ema200','')} | "
+            f"{row.get('boll20_percent_b','')} | {row.get('boll20_bandwidth','')} | "
+            f"{row.get('trend_state','')} | {row.get('error','')} |"
         )
     report.extend(["", "## High-Quality Signals", ""])
     high_quality = [event for event in events if event.get("source_quality") == "A"]
@@ -79,4 +92,3 @@ def build_markdown_report(
 def write_report(path: Path, report: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(report, encoding="utf-8")
-
