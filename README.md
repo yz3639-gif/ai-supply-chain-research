@@ -63,6 +63,23 @@ python3 realtime_data_pipeline/run_pipeline.py
 - `realtime_data_pipeline/data/processed/global_market_theme_summary_latest.csv`
 - `realtime_data_pipeline/reports/realtime_snapshot_latest.md`
 
+## 图表增强环境
+
+已准备好可选的 `numpy/pandas/matplotlib` 分析环境，用于后续生成更复杂的图表和回测视图。  
+搭建：
+
+```bash
+./scripts/setup_analysis_env.sh
+```
+
+验证：
+
+```bash
+./scripts/run_with_analysis_env.sh scripts/check_analysis_env.py
+```
+
+说明：依赖安装在 `.analysis_deps/`，不会提交进 Git，也不污染系统 Python。
+
 ## 整理记录
 
 详见 `整理清单_2026-05-25.md`。
