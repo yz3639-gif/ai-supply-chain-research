@@ -13,6 +13,7 @@
 - `00_active_system/prospective_event_ledger_v2.csv`：增强前瞻事件账本，加入估值状态、信息质量、主题 beta 和叙事漂移。
 - `00_active_system/no_trade_checklist_v1.csv`：不做清单，防止模型为了交易而交易。
 - `00_active_system/model_validation_protocol_v1.md`：模型有效性验证协议，拆分方向、公司 alpha 和执行时点。
+- `00_active_system/realtime_report_2026-05-25.md`：基于最新公开信息生成的实时信息层报告。
 - `00_active_system/simple_event_checklist_v1.csv`：最小事件 checklist。
 - `00_active_system/decision_journal_simple_v1.md`：简单复盘日志。
 - `00_active_system/framework_validity_audit_v1.md`：有效性审计。
