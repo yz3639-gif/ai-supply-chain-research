@@ -1,0 +1,7 @@
+year,scenario,Q1_revenue,Q2_revenue,Q3_revenue,Q4_revenue,FY_revenue,AI_HPC_HBM_AP_revenue_estimate,non_GAAP_gross_margin_assumption,non_GAAP_operating_margin_assumption,key_assumption,decision_readthrough
+2026,bear,121.7,130,135,140,526.7,315-340,50%,25%,"Q1 order surge converts slower than expected; H2 growth below company >25% vs H1 signal","Avoid chasing; valuation multiple compresses"
+2026,base,121.7,130,155,170,576.7,360-400,51-52%,28%,"Q2 guide midpoint; H2 grows about 29% vs H1; OSAT and IDM orders deliver in 2026","Good execution but current valuation leaves limited margin of safety"
+2026,bull,121.7,131,175,205,632.7,420-460,52-53%,30%,"Hawk/OSAT orders pull forward; H2 growth far above 25%; AI/AP mix improves","Momentum can continue; still needs valuation discipline"
+2027,bear,,,,,600,360-400,50%,26%,"2026 order wave normalizes; China/AP cyclicality returns; competition/pricing pressure","Not enough for current valuation"
+2027,base,,,,,700,470-520,53%,32%,"Camtek approaches $750M target model but not fully there; AI/AP remains ~70% of revenue","Can justify premium multiple, but upside depends on entry price"
+2027,bull,,,,,800,560-620,54-55%,34%,"Hawk becomes high-end AP/HBM standard at multiple IDMs/OSATs; software/services attach expands margin","Confirmation case; attractive only if bought before market prices it"

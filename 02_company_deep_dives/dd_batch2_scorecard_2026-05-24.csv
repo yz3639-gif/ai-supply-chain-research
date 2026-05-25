@@ -1,0 +1,7 @@
+ticker,company,primary_bottleneck,stage,order_evidence_0_5,financial_quality_0_5,valuation_risk_0_5,execution_risk_0_5,12m_catalyst_0_5,overall_priority,positioning_note
+CAMT,Camtek,HBM/chiplet/hybrid bonding inspection & metrology,commercial scaling,5,4,4,2,4,A-,"AI/HBM纯度高且订单明确；但已被市场重估，更多是先进封装景气锚"
+ONTO,Onto Innovation,HBM/2.5D process control inspection/metrology/lithography,commercial scaling,5,5,3,2,4,A,"平台宽、现金好、AI supply-chain 暴露大；弹性不如小票但确定性最均衡"
+FORM,FormFactor,HBM probe cards/KGD/advanced package wafer test,commercial scaling,4,4,4,3,4,A-,"KGD 是 AI 封装隐蔽卡点；估值较高，DRAM/HBM周期和客户集中要盯"
+MXL,MaxLinear,1.6T optical DSP + 224G copper retimer + 200G TIA,inflection ramp,4,3,4,4,5,A-,"从旧通信芯片转向AI互连，2026 optical data center revenue 指引是重估核心"
+SMTC,Semtech,200G TIA/VCSEL driver/low-power PMD for 1.6T optics,commercial ramp,4,3,3,3,4,B+,"FiberEdge卡在1.6T SR8短距PMD，但公司业务混杂且债务较高"
+MTSI,MACOM,448G modulator drivers/TIA/photonic analog components,commercial scaling,4,4,4,2,4,B+,"400G/lane和3.2T前瞻位置强，但市值已大，弹性弱于MXL/SMTC"

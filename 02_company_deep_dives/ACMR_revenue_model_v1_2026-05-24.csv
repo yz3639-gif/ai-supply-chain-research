@@ -1,0 +1,7 @@
+year,scenario,single_wafer_cleaning_revenue,ECP_furnace_other_revenue,advanced_packaging_services_spares_revenue,total_revenue,gross_margin_assumption,operating_margin_assumption,working_capital_quality,key_assumption,decision_readthrough
+2026,bear,480,350,170,1000,43%,13%,"Weak: AR/inventory remain high; OCF negative","Growth mostly China mature/legacy capex; AP repeat outside China not proven","Do not add; valuation compresses"
+2026,base,500,430,210,1140,46%,15%,"Mixed: shipments convert but AR/inventory still elevated","Company guidance midpoint; ECP/AP growth offsets single-wafer softness","Observation/starter only if working capital stabilizes"
+2026,bull,520,540,240,1300,47%,17%,"Improving: OCF turns positive; AR/inventory growth below revenue growth","Non-China AP repeat orders; panel-level packaging demand accelerates; China demand remains strong","Add if repeat orders and cash conversion confirm"
+2027,bear,500,360,190,1050,42%,11%,"Poor: inventory/AR absorb cash","China capex slows; global AP orders do not repeat","Avoid/exit"
+2027,base,560,540,270,1370,46%,16%,"Stable: DSO/DIO improve modestly","ECP/AP becomes a larger growth engine; some global customer repeat","Can justify medium confidence"
+2027,bull,600,700,350,1650,48%,18%,"Strong: OCF positive and acceptance cycles normalize","ACMR becomes recognized global advanced packaging wet/ECP supplier","Confirmation only after proof of non-China revenue contribution"

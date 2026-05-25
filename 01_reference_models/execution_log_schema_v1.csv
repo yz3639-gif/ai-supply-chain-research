@@ -1,0 +1,10 @@
+ticker,date,source,source_url,source_type,reliability_score,section,field,required,description
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,pre_event,thesis,YES,What I believed before the event
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,pre_event,why_now,YES,Why this event or price matters now
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,pre_event,what_would_prove_wrong,YES,The concrete fact that would invalidate the thesis
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,post_event,result_vs_expectation,YES,Beat miss or inline versus company guide or consensus
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,post_event,outlook_change,YES,Raised lowered or unchanged outlook
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,post_event,thesis_evidence,YES,New evidence in orders backlog customers products capacity or repeat demand
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,post_event,margin_fcf_health,YES,Whether margin and cash flow remain healthy in company-specific context
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,decision,action_and_one_sentence_reason,YES,The action and one sentence reason
+TEMPLATE,2026-05-25,v3.2 simple decision journal,decision_journal_simple_v1.md,internal_rule,1.00,review_30_90d,error_type,YES,Demand competition valuation execution unobservable data or timing error

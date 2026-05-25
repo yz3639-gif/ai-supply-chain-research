@@ -1,0 +1,13 @@
+ticker,metric_group,metric,value,interpretation,action
+MXL,working_capital,Q1_2026_DSO_days,26.8,"Receivables look clean relative to Q1 revenue; no immediate AR quality issue","Monitor if hyperscale/data-center ramp changes payment terms"
+MXL,working_capital,Q1_2026_DIO_days,132.5,"Inventory days elevated but plausible for fabless ramp; 10-Q notes wafer prepayment supporting rising data-center demand","Watch inventory and wafer prepayment vs optical revenue conversion"
+MXL,growth_quality,Infrastructure_YoY_growth,136%,"Infrastructure became largest end market and optical ramp is driving re-rating","Require Q2 guide beat or FY optical DC revenue upward revision"
+MXL,valuation,Base_case_upside,-9.3%,"Base case is not enough after re-rating; stock needs bull case to work","Avoid chasing unless revenue bridge improves"
+ACMR,working_capital,Q1_2026_DSO_days,204.9,"Accounts receivable are very high relative to quarterly revenue; equipment acceptance/payment cycles may explain some but this is a key risk","Track AR growth vs revenue and cash conversion every quarter"
+ACMR,working_capital,Q1_2026_DIO_days,535.5,"Inventory is very high relative to quarterly COGS, reflecting tool build/shipments/evals but also creates cash-flow risk","Require shipments-to-revenue conversion and inventory growth moderation"
+ACMR,cash_flow,Q1_2026_operating_cash_flow,-29.5M,"Profitable company but operating cash used due to inventories, receivables, payables/customer advances changes","Do not upgrade to confirmation仓 until cash conversion improves"
+ACMR,growth_quality,Q1_2026_shipments_vs_revenue,"$240.7M shipments vs $231.3M revenue","Shipments exceed revenue modestly; first tools awaiting acceptance can support future revenue but also delays cash/revenue certainty","Track acceptance timing and deferred revenue/customer advances"
+HPS-A.TO,backlog_quality,Q1_2026_backlog_yoy,+94.6%,"Very strong backlog, and company says data-centre activity/custom shipments drive demand","Need backlog amount and data-center/custom mix disclosure"
+HPS-A.TO,backlog_quality,Q1_2026_backlog_sequential,+4.1%,"Backlog grew even after record shipments; positive quality signal","Track book-to-bill and whether sequential growth persists"
+HPS-A.TO,margin,Q1_2026_gross_margin,30.1%,"Sequential improvement from 29.2% despite tariff/input pressure","Stop-warning if margin falls below 28% without one-time explanation"
+HPS-A.TO,capacity,Mexico_factory,"Began shipping in Q1 2026","New capacity is key to converting large/custom data-center orders","Track capacity utilization and delivery delays"

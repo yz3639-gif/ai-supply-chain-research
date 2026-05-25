@@ -1,0 +1,7 @@
+year,scenario,Q1_actual,Q2_assumption,Q3_assumption,Q4_assumption,full_year_revenue,infra_revenue_assumption,optical_data_center_revenue_assumption,key_assumption,implied_ps_at_current_mcap,decision_readthrough
+2026,bear,137.2,160,140,130,567.2,220,"<150","Q2 guide barely met; optical ramp stalls; broadband/connectivity do not recover",15.65,"Downside large; AI rerating fails"
+2026,base,137.2,165,185,205,692.2,285,"150-170","Q2 midpoint met; Keystone ramps; optical DC guide met but not raised",12.83,"Current price already discounts much of this"
+2026,bull,137.2,165,230,275,807.2,390,"200+","H2 step-up; optical DC guide raised; Rushmore/Annapurna production visibility",11.0,"Bull case needed for attractive upside"
+2027,bear,,,,,600,240,"150-180","No durable 1.6T/224G ramp; Keystone matures; old business flat/down",14.8,"Valuation compresses sharply"
+2027,base,,,,,850,470,"250-320","Keystone + Rushmore ramp; Annapurna contributes; non-DC segments recover modestly",10.45,"Can support current market cap if growth quality improves"
+2027,bull,,,,,1100,700,"400+","MXL becomes a recognized AI interconnect platform across optical DSP + copper retimer",8.07,"Could support major upside if margins and design wins confirm"

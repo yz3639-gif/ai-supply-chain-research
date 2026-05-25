@@ -1,0 +1,52 @@
+ticker,company,scope_or_layer,role,market_cap,price_date,last_close,evidence_level,market_understanding,priority,next_validation,main_risks
+POET,POET Technologies,光引擎/wafer-level photonic integration,二级卡点/高弹性,2518167040,2026-05-22,14.59,中,,mid-small,Lumilens 5000万美元初始PO兑现; engineering samples late 2026; 2027 production ramp; Malaysia量产良率,
+ALMU,Aeluma,III-V on silicon/量子点激光/材料平台,早期材料期权,414432800,2026-05-22,22.64,低,,micro,300mm InP-on-Si/量子点激光客户验证; 商业订单; 非政府收入,
+LWLG,Lightwave Logic,EO聚合物调制器/PDK,新材料期权,1979923328,2026-05-22,12.85,中低,,mid-small,高产量foundry转移; Tower/SilTerra/GF PDK tape-out; 可靠性和收入合同,
+VECO,Veeco Instruments,InP激光制造设备/IBD/MOCVD/wet processing,二阶设备卡点,3634543872,2026-05-22,59.55,高,,mid-small,2.5亿美元InP laser equipment订单交付; 2027收入确认; Spector IBD产能扩张,
+AEHR,Aehr Test Systems,硅光/AI芯片burn-in与可靠性测试,测试卡点/良率卖铲人,2988688128,2026-05-22,95.02,中高,,mid-small,silicon photonics客户后续订单; Sonoma AI processor burn-in订单; FY2027 backlog,
+COHU,Cohu,GaN/AI处理器/功率器件测试,测试设备/功率链条,2195068928,2026-05-22,46.53,中,,mid-small,GaN power devices for AI data centers订单规模; HPC processor test二次订单收入,
+AXTI,AXT,InP/GaAs/Ge基底,材料卡点已明牌,9213547520,2026-05-22,140.83,高,,re-rated,InP出口许可; Tongmei STAR IPO/融资; 6英寸InP量产; 毛利恢复,
+AAOI,Applied Optoelectronics,800G/1.6T光模块,模块放量已明牌,14563260416,2026-05-22,181.49,高,,re-rated,1.6T hyperscaler订单交付; 月产能50万只目标; 客户集中与毛利,
+LITE,Lumentum,EML/UHP laser/OCS/CPO,光源龙头/锚定票,73668820992,2026-05-22,946.90,高,,large,200G EML/UHP laser供需; OCS/CPO导入; AI datacom收入占比,
+COHR,Coherent,垂直光子平台/InP/CPO/模块,光子平台龙头/锚定票,73867542528,2026-05-22,377.57,高,,large,6英寸InP与CPO demo转订单; AI datacenter收入增速,
+SMTC,Semtech,FiberEdge PMD/TIA/VCSEL driver,PMD模拟前端卡点,14598492160,2026-05-22,156.78,中高,,re-rated,200G/channel TIA/VCSEL driver客户采用; POET/Semtech engine拉动,
+MXL,MaxLinear,1.6T DSP/TIA/AEC DSP,低功耗DSP转型,8879377408,2026-05-22,99.16,中,,re-rated,Rushmore 1.6T DSP量产客户; Washington 200G TIA采纳; 转型收入,
+MTSI,MACOM,drivers/TIA/laser/control ICs,高端模拟/光电芯片,29448644608,2026-05-22,385.98,中高,,large,448G per lane drivers; 3.2T平台客户; 光/铜连接份额,
+VIAV,VIAVI,光通信测试/网络验证,测试平台,12213405696,2026-05-22,49.51,中,,re-rated,1.6T/3.2T制造测试订单; 光模块厂扩产周期,
+POWL,Powell Industries,电力/变压器,电力交付卡点,10172444672,2026-05-22,279.22,高,,re-rated,4亿美元+数据中心订单交付; backlog转收入; 毛利维持,
+PPSI,Pioneer Power,电力/变压器,极小票电力期权,57811548,2026-05-22,5.21,中低,,micro,PRYMUS 600万美元订单交付; 1-10MW平台复购; 现金流与融资,
+MOD,Modine,,散热链条已明牌,13737530368,2026-05-22,260.52,高,,re-rated,数据中心销售50%-70% CAGR; 产能扩张; 液冷毛利,
+VRT,Vertiv,液冷/热管理,基础设施龙头/锚定票,125780262912,2026-05-22,327.46,高,,mega,organic orders/backlog; 液冷并购整合; AI capex节奏,
+NVT,nVent,液冷/热管理,基础设施跟随,26628888576,2026-05-22,164.66,中,,large,数据中心订单和收购协同; 电气系统毛利,
+CRDO,Credo,铜互连/连接芯片,连接芯片已明牌,40285712384,2026-05-22,218.41,高,,large,AEC客户集中; 光DSP; 毛利与竞争,
+ALAB,Astera Labs,铜互连/连接芯片,连接芯片已明牌,52601667584,2026-05-22,306.88,高,,large,CXL/PCIe attach; hyperscaler customer concentration; 估值,
+FN,Fabrinet,光通信/硅光代工制造,制造平台/锚定票,25219121152,2026-05-22,703.86,高,,large,800G/1.6T制造收入; 客户集中; 毛利稳定,
+MP,MP Materials,磁材/稀土,磁材战略卡点,11475310592,2026-05-22,64.46,中高,,re-rated,10X磁材园区建设; offtake/政府支持; NdPr价格与中国政策,
+MTRN,Materion,,材料跟随/非纯AI,4473150976,2026-05-22,215.04,中,,mid-small,半导体/数据中心材料收入; 光学涂层与热材料订单,
+CAMT,Camtek,先进封装/HBM,advanced packaging inspection/metrology,7706463744,2026-05-22,167.37,高,半明牌,A,IDM/OSAT 订单继续; HBM/chiplet 检测 ASP; Hawk 渗透率,估值已不低; 订单集中; 半导体设备周期
+ONTO,Onto Innovation,先进封装/HBM,advanced packaging inspection/metrology/lithography,13045251072,2026-05-22,262.25,高,半明牌,A-,HBM VPA/Dragonfly G5 放量; PACE/panel-level packaging; advanced nodes 协同,大市值化; 设备周期; 客户 capex 节奏
+FORM,FormFactor,先进封装/HBM,probe cards/KGD/wafer test,10055386112,2026-05-22,128.99,中高,半明牌,A-,HBM probe card 收入; advanced packaging Altius; AI networking probe card,估值高; 客户集中; DRAM 周期
+ACMR,ACM Research,先进封装/HBM,advanced packaging wet process/coating/develop/clean/electroplate,5069180928,2026-05-22,73.35,中高,较低,A-,非中国客户订单; panel-level packaging; electroplating/clean 订单,中国暴露; 出口/地缘; 订单转收入节奏
+KLIC,Kulicke & Soffa,先进封装/HBM,thermocompression/hybrid/advanced packaging assembly,5463552512,2026-05-22,104.40,中,较低,B+,FTC/HBM system 出货; advanced packaging revenue mix; hybrid bonding 接单,传统业务拖累; 转型慢; 竞争 BESI/ASMPT
+AMKR,Amkor Technology,先进封装/HBM,OSAT advanced packaging/test,16297617408,2026-05-22,65.75,中高,半明牌,B+,Arizona advanced packaging; AMD/AI customer; HDFO/platform mix,资本开支大; 毛利低; 2028 产能较远
+BESI.AS,BE Semiconductor,先进封装/HBM,hybrid bonding/die attach,21673144320,2026-05-22,273.60,中高,明牌,B+,hybrid bonding backlog; HBM4 客户订单; 2026H2-2027 adoption,欧洲大票; smartphone cycle; adoption timing
+ASX,ASE Technology,先进封装/HBM,OSAT advanced packaging/CoWoS overflow,N/A,N/A,N/A,中高,半明牌,B,CoWoS/FOCoS capacity; WUS collaboration; advanced test revenue,ADR 与台湾本体流动性; 毛利; capex
+HPS-A.TO,Hammond Power Solutions,电力/变压器,dry-type transformers/power quality,3569215232,2026-05-22,299.81,高,较低,A,data center custom shipments; Mexico factory ramp; backlog conversion,加拿大流动性; 原材料/关税; 估值重估后回撤
+ETN,Eaton,电力/变压器,electrical Americas/switchgear/power chain,151961206784,2026-05-22,391.35,高,明牌,Anchor,orders/backlog; NVIDIA AI factory power blueprint; margin,太大; AI 纯度低; 估值
+GEV,GE Vernova,电力/变压器,grid equipment/power generation/transformers,279130210304,2026-05-22,1038.74,高,明牌,Anchor,electrification backlog; Prolec GE; data center orders,超大票; turbine cycle; 政策/执行
+ECL,Ecolab,液冷/热管理,water/cooling chemistry/CoolIT owner,71293747200,2026-05-22,253.32,高,明牌,Anchor,CoolIT integration; AI cooling revenue disclosure; water treatment attach,大票; 收购整合; 估值
+3017.TW,Asia Vital Components,液冷/热管理,cold plates/fans/chassis/racks,998095060992,2026-05-22,2545.00,中,明牌,B+,cold plate份额; GB/Rubin server ramp; customer concentration,台湾股; 估值; 客户集中
+APH,Amphenol,铜互连/连接器,copper/optical connectors/cables,162464759808,2026-05-22,132.06,高,明牌,Anchor,data center organic growth; CommScope CCS integration; 224G/448G connectors,超大票; 收购整合; 估值
+TEL,TE Connectivity,铜互连/连接器,connectors/sensors/cable assemblies,59190632448,2026-05-22,202.78,中,明牌,B,AI/data center connector demand; industrial recovery,AI 纯度低; 大票
+GLW,Corning,铜互连/连接器,optical fiber/cable/glass/CPO fiber handling,167006765056,2026-05-22,194.05,高,明牌,Anchor,Meta/AI fiber shipments; CPO FlexConnect; display/other cycles,超大票; 非纯 AI; 估值
+MU,Micron,存储,HBM4/SOCAMM2/PCIe Gen6 SSD,846928216064,2026-05-22,751.00,高,明牌,Anchor,HBM4 contracts; 9650 Gen6 SSD; SOCAMM2 attach,超大票; memory cycle; capex
+WDC,Western Digital,存储,high-capacity HDD/HAMR roadmap,166922665984,2026-05-22,484.28,高,明牌,B+,hyperscaler LTAs; high-capacity roadmap; capacity sold out claims,HDD 周期; 云客户集中; ASP
+STX,Seagate,存储,HAMR/high-capacity HDD,182237626368,2026-05-22,812.73,高,明牌,B+,HAMR yield; cloud qualifications; gross margin,大票; HDD cycle; customer concentration
+8299.TWO,Phison,存储,SSD controllers/enterprise SSD/edge AI storage,537238994944,2026-05-22,2430.00,中,半明牌,B,enterprise SSD controller; aiDAPTIV/Pascari; revenue mix,台湾 OTC; NAND cycle; 竞争
+6324.T,Harmonic Drive Systems,机器人执行器,strain-wave reducers,663614193664,2026-05-22,7010.00,中,半明牌,B+,humanoid OEM design-ins; capacity; margin recovery,工业机器人周期; 中国竞争; 估值
+6471.T,Nabtesco,机器人执行器,RV/cycloidal precision reducers,582781304832,2026-05-22,1191.00,中,较低,B+,humanoid/cobot entry; 6-axis set solution; industrial robot recovery,周期低迷; humanoid 放量慢
+RRX,Regal Rexnord,机器人执行器,precision motors/actuators/drives/air moving,13365838848,2026-05-22,200.78,中,较低,B,AMC orders; automation mix; data center air moving/power distribution,AI/robotics 纯度低; 债务/整合; 周期
+NOVT,Novanta,机器人传感器,precision motion/force sensing/robotics,5687213056,2026-05-22,159.70,中,较低,B,robotics customer wins; force sensing; surgical robotics growth,医疗设备周期; AI 纯度低
+SENS,Sensata Technologies,机器人传感器,force sensors/motors/actuators,330966784,2026-05-22,6.34,低,较低,Spec,robotics/force sensor design-ins; balance sheet repair,基本面弱; 非纯机器人; 高风险
+6762.T,TDK,机器人传感器/磁性,sensors/MEMS/magnets/actuators/batteries,6396734078976,2026-05-22,3370.00,中高,明牌,B,SensorGPT; robotics sensor platform; magnetics/battery demand,大票; 消费电子暴露; 日股
+NEO.TO,Neo Performance Materials,磁材/稀土,Magnequench/bonded magnets/rare metals,1253820544,2026-05-22,29.86,中高,较低,A-,Magnequench EBITDA; European magnet facility; customer agreements,小盘流动性; 稀土价格; 债务

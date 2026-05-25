@@ -1,0 +1,6 @@
+ticker,date,source,source_url,source_type,reliability_score,layer1_score,layer2_score,margin_flag,layer3_status,action,position_change,execution_note
+ALL,2026-05-25,v3.2 lean action rule,lean_decision_system_v1.md,internal_rule,1.00,beat,raise_and_thesis_validated,healthy,pending_or_positive,Eligible_add,not_mechanical,Add only if portfolio risk valuation and correlation allow
+ALL,2026-05-25,v3.2 lean action rule,lean_decision_system_v1.md,internal_rule,1.00,beat,no_raise_or_no_new_thesis_evidence,healthy,any,Hold_or_small_adjustment,not_mechanical,Do not chase headline beat without forward evidence
+ALL,2026-05-25,v3.2 lean action rule,lean_decision_system_v1.md,internal_rule,1.00,miss_or_inline,weak_or_lowered,any,any,Downgrade_review,not_mechanical,Miss or lower guide overrides price action
+ALL,2026-05-25,v3.2 lean action rule,lean_decision_system_v1.md,internal_rule,1.00,any,any,structural_margin_or_fcf_pressure,any,Reduce_or_wait,not_mechanical,Structural margin or cash-flow deterioration blocks adding
+ALL,2026-05-25,v3.2 lean action rule,lean_decision_system_v1.md,internal_rule,1.00,any,any,any,positive_only,No_standalone_buy,0,Market confirmation only affects execution pacing

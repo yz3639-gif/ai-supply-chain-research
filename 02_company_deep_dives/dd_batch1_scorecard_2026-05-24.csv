@@ -1,0 +1,9 @@
+ticker,company,primary_bottleneck,stage,order_evidence_0_5,financial_quality_0_5,valuation_risk_0_5,execution_risk_0_5,12m_catalyst_0_5,overall_priority,positioning_note
+ACMR,ACM Research,advanced packaging wet/electroplating/clean/PECVD,commercial scaling,4,4,3,4,4,A-,"订单和增长证据强；最大折扣来自中国/Entity List/客户集中，不是技术逻辑"
+HPS-A.TO,Hammond Power Solutions,dry-type transformers/power quality for data centers,commercial scaling,4,4,3,3,4,A,"电力链小而关键，backlog 和数据中心活动最干净；注意估值已重估和加拿大流动性"
+KLIC,Kulicke & Soffa,thermo-compression bonding for HBM/advanced packaging,turnaround-to-growth,3,4,3,3,4,A-,"老封装设备公司转 advanced solutions；TCB 产能上限目标使其具重估弹性"
+NEO.TO,Neo Performance Materials,Magnequench bonded magnets/heavy REE/Europe magnet facility,commercial ramp,4,3,2,4,4,A-,"磁材+非中国供应链+欧洲永磁量产节点；盈利受稀土/稀有金属价格影响"
+POET,POET Technologies,wafer-level optical engine/EOI/optical interposer,pre-ramp platform,3,1,5,5,5,B+/Spec,"50M PO + 400M融资显著改变生存概率；收入兑现和良率仍未证明"
+AEHR,Aehr Test Systems,AI ASIC package burn-in + silicon photonics wafer burn-in,order inflection,5,2,5,3,5,A-,"订单证据突然变硬；估值按未来收入定价，下一步看 FY2027 bookings/revenue"
+COHU,Cohu,GaN power device test + AI datacenter processor test,early commercial AI pivot,4,3,2,3,4,A-,"不是纯 AI，但订单从 HPC processor 到 GaN power 连续出现；估值相对没那么疯狂"
+PPSI,Pioneer Power Solutions,1-10MW mobile distributed power/PRYMUS,early commercial validation,2,1,3,5,4,Spec,"真正 micro-cap，6M订单是验证起点；核心风险是现金流、复购和项目执行"

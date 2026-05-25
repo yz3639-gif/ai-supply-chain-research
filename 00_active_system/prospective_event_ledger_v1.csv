@@ -1,0 +1,3 @@
+ticker,theme,event_date,event_type,thesis_before_event,what_would_prove_wrong,expected_direction,action_before_event,result_1d,result_20d,result_60d,result_120d,thesis_validated,error_type,benchmark_result,lesson
+SMTC,optical,2026-05-26,earnings,"Semtech may benefit from 800G/1.6T/3.2T optical and copper interconnect upgrades","Result misses company guide; outlook does not improve; no new Signal Integrity evidence; margin/FCF structurally worsens",neutral_to_bullish,watch,,,,,,,,
+MOD,power_cooling,2026-05-26,earnings,"Modine data-center cooling demand may remain strong if FY2027 outlook and capacity commentary hold","Data-center outlook weakens; margin pressure is structural; FCF/working capital deteriorates without delivery explanation",neutral_to_bullish,watch,,,,,,,,
