@@ -31,6 +31,7 @@
 | `02_company_deep_dives/` | ACMR、CAMT、HPS、MXL、ONTO、SMTC/MTSI/VECO/POWL/MOD/FORM 等公司深挖 |
 | `03_backtests_and_scripts/` | walk-forward、主题回测、事件研究脚本和结果 |
 | `04_watchlists_strategy/` | watchlist、策略名册、催化剂日历、战术/组合表 |
+| `realtime_data_pipeline/` | 每分钟公开信息抓取、价格快照、SEC filings 和模型输入表 |
 | `99_archive_superseded/` | v3.3 之前的旧报告、根目录重复文件和缓存 |
 
 ## 使用原则
@@ -41,6 +42,21 @@
 4. 每个交易前先跑 `no_trade_checklist_v1.csv`；如果只是主题 beta 或估值赔率差，默认不加仓。
 5. 每个事件后按方向、公司 alpha、执行时点三层复盘，不能只用股价涨跌证明模型有效。
 6. 旧文件保留在 `99_archive_superseded/`，需要时可以恢复。
+
+## 实时抓取
+
+已建立 `realtime_data_pipeline/`。当前 Codex app 里已创建每分钟 heartbeat 自动化：`AI supply-chain realtime ingest`。  
+本地手动运行一次：
+
+```bash
+python3 realtime_data_pipeline/run_pipeline.py
+```
+
+输出入口：
+
+- `realtime_data_pipeline/data/processed/model_ingest_latest.csv`
+- `realtime_data_pipeline/data/processed/events_history.csv`
+- `realtime_data_pipeline/reports/realtime_snapshot_latest.md`
 
 ## 整理记录
 

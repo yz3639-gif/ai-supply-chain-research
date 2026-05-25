@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "refresh_seconds": 60,
+  "tickers": ["SMTC", "MOD", "POWL", "FORM", "VECO", "POET", "AXTI", "PPSI"],
+  "companies": {
+    "SMTC": {"name": "Semtech", "theme": "optical", "risk_cluster": "optical"},
+    "MOD": {"name": "Modine", "theme": "power_cooling", "risk_cluster": "power_cooling"},
+    "POWL": {"name": "Powell Industries", "theme": "power_cooling", "risk_cluster": "power_cooling"},
+    "FORM": {"name": "FormFactor", "theme": "AP_HBM", "risk_cluster": "AP_HBM"},
+    "VECO": {"name": "Veeco", "theme": "optical_equipment", "risk_cluster": "optical"},
+    "POET": {"name": "POET Technologies", "theme": "optical", "risk_cluster": "cold_options"},
+    "AXTI": {"name": "AXT", "theme": "optical_materials", "risk_cluster": "China_geopolitical"},
+    "PPSI": {"name": "Pioneer Power Solutions", "theme": "power_cooling", "risk_cluster": "cold_options"}
+  },
+  "source_pages": [
+    {
+      "ticker": "SMTC",
+      "source_type": "ir_release",
+      "source_quality": "A",
+      "url": "https://investors.semtech.com/news/semtech-announces-fourth-quarter-and-fiscal-year-2026-results/21cc5cf3-f51f-4f27-88d7-4023516e7840",
+      "note": "FY2026 Q4 results and Q1 FY2027 outlook"
+    },
+    {
+      "ticker": "SMTC",
+      "source_type": "ir_notice",
+      "source_quality": "A",
+      "url": "https://www.semtech.com/company/press/semtech-announces-first-quarter-of-fiscal-year-2027-conference-call",
+      "note": "Q1 FY2027 release timing"
+    },
+    {
+      "ticker": "MOD",
+      "source_type": "ir_notice",
+      "source_quality": "A",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-to-Host-Fourth-Quarter-Fiscal-2026-Earnings-Conference-Call-on-May-27-2026/default.aspx",
+      "note": "Q4 FY2026 release timing"
+    },
+    {
+      "ticker": "MOD",
+      "source_type": "ir_release",
+      "source_quality": "A",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Reports-Third-Quarter-Fiscal-2026-Results/default.aspx",
+      "note": "Q3 FY2026 data-center growth and margin commentary"
+    },
+    {
+      "ticker": "POWL",
+      "source_type": "ir_release",
+      "source_quality": "A",
+      "url": "https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-second-quarter-fiscal-2026-results",
+      "note": "Q2 FY2026 orders, backlog, and data-center mega order"
+    },
+    {
+      "ticker": "FORM",
+      "source_type": "ir_release",
+      "source_quality": "A",
+      "url": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results/",
+      "note": "Q1 FY2026 HBM/probe demand and guide"
+    },
+    {
+      "ticker": "FORM",
+      "source_type": "product_page",
+      "source_quality": "B",
+      "url": "https://www.formfactor.com/product/probe-cards/foundry-logic/altius/",
+      "note": "Altius HBM known-good-die and stack test capability"
+    },
+    {
+      "ticker": "VECO",
+      "source_type": "ir_release",
+      "source_quality": "A",
+      "url": "https://ir.veeco.com/news-and-events/news-details/2026/Veeco-Announces-250-Million-in-Equipment-Orders-for-Manufacturing-Indium-Phosphide-Lasers/default.aspx",
+      "note": "InP laser manufacturing equipment orders"
+    },
+    {
+      "ticker": "POET",
+      "source_type": "ir_release",
+      "source_quality": "A",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-first-quarter-2026-financial-results",
+      "note": "Q1 2026 results and Lumilens initial purchase order"
+    },
+    {
+      "ticker": "POET",
+      "source_type": "ir_release",
+      "source_quality": "A",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-announces-closing-of-us400-million-investment",
+      "note": "US$400M financing and capacity expansion"
+    },
+    {
+      "ticker": "POET",
+      "source_type": "ir_release",
+      "source_quality": "B",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks",
+      "note": "Lumilens partnership, engineering samples, and production ramp targets"
+    },
+    {
+      "ticker": "AXTI",
+      "source_type": "sec_exhibit",
+      "source_quality": "A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1051627/000143774926014204/ex_906119.htm",
+      "note": "Q1 2026 result exhibit and InP AI data-center commentary"
+    },
+    {
+      "ticker": "PPSI",
+      "source_type": "ir_release",
+      "source_quality": "A",
+      "url": "https://www.pioneerpowersolutions.com/286-pioneer-power-announces-financial-results-for-first-quarter-2026-and-business-updates/",
+      "note": "Q1 2026 PRYMUS order, backlog, cash, and margin"
+    }
+  ],
+  "price_provider": {
+    "name": "stooq_quote_csv",
+    "url_template": "https://stooq.com/q/l/?s={symbol}.us&f=sd2t2ohlcv&h&e=csv"
+  }
+}
