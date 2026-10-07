@@ -85,7 +85,7 @@
 
 ## 4. Revenue Bridge
 
-详表：[CAMT_revenue_model_v1_2026-05-24.csv](/Users/yuangzuo/Documents/New%20project/research_ai_supply_chain/CAMT_revenue_model_v1_2026-05-24.csv)
+详表：[CAMT_revenue_model_v1_2026-05-24.csv](CAMT_revenue_model_v1_2026-05-24.csv)
 
 ### 2026E
 
@@ -129,7 +129,7 @@
 
 ## 6. 客户链与竞争
 
-详表：[CAMT_competitor_customer_map_v1_2026-05-24.csv](/Users/yuangzuo/Documents/New%20project/research_ai_supply_chain/CAMT_competitor_customer_map_v1_2026-05-24.csv)
+详表：[CAMT_competitor_customer_map_v1_2026-05-24.csv](CAMT_competitor_customer_map_v1_2026-05-24.csv)
 
 客户证据：
 
